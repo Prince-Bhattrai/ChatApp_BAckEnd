@@ -7,7 +7,7 @@ configDotenv()
 
 const app = express();
 app.use(cors({
-    origin: "https://chatapp-ekgl.onrender.com",
+    origin: "https://chat-ing.onrender.com",
     credentials: true
 }));
 
@@ -15,7 +15,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
     cors: {
-        origin: "https://chatapp-ekgl.onrender.com",
+        origin: "https://chat-ing.onrender.com",
         methods: ["GET", "POST"],
         credentials: true
     }
